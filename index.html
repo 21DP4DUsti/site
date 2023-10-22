@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneaker Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Brands.html">Brands</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="AboutUs.html">About Us</a></li>
+        </ul>
+    </nav>
+    <h1>Sneaker Store</h1>
+    <a href="#" class="cart-icon">
+        <img src="cart.png" alt="Cart">
+        <span class="cart-counter">0</span>
+    </a>
+    <a href="#" class="register-button" id="registerButton">Login</a>
+    <script src="script.js"></script>
+    <div class="user-display"></div>
+    
+</header>
+
+<div class="registration-popup">
+    <div class="popup-content">
+        <span class="close-button">&times;</span>
+        <h2>Login</h2>
+        <form>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</div>
+
+<section class="featured-products">
+    <h2>Featured Sneakers</h2>
+    <div class="product">
+        <img src="product1.jpg" alt="Sneaker 1">
+        <h3>Nike Dunk Low University Blue</h3>
+        <p>110$</p>
+        <button>Buy</button>
+    </div>
+    <div class="product">
+        <img src="product2.jpg" alt="Sneaker 2">
+        <h3>Nike Air Force 1 Low Flax 2020</h3>
+        <p>99$</p>
+        <button>Buy</button>
+    </div>
+    <div class="product">
+        <img src="product3.jpg" alt="Sneaker 3">
+        <h3>Adidas originals campus 00s shoes grey white</h3>
+        <p>99$</p>
+        <button>Buy</button>
+    </div>
+</section>
+
+<section class="newsletter">
+    <h2>Subscribe to Our Newsletter</h2>
+    <form id="subscribeForm">
+        <input type="email" placeholder="Enter your e-mail">
+        <button type="submit">Subscribe</button>
+    </form>
+    <div class="success-message" style="display:none; color:green;">You have successfully subscribed!</div>
+</section>
+
+<footer>
+    <p>&copy; 2023 Sneaker Store</p>
+    <p>Address: Martas-Rinkas1, Riga, Latvija</p>
+    <p>Phone: +371 22303133</p>
+</footer>
+
+<div class="cart-modal">
+    <div class="cart-content">
+        <span class="close-cart">&times;</span>
+        <h2>Cart</h2>
+        <table class="cart-items"></table>
+        <h3>Total: <span class="total-price">$0</span></h3>
+    </div>
+</div>
+<table class="cart-items"></table>
+</body>
+</html>

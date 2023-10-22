@@ -1,0 +1,358 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center; 
+}
+
+h1 {
+    font-size: 2rem;
+    text-transform: uppercase; 
+    margin: 0 auto;
+    text-align: center; 
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+.cart-icon {
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    display: inline-block;
+    position: relative;
+}
+
+.featured-products {
+    padding: 2rem;
+}
+
+.featured-products h2 {
+    font-size: 1.5rem;
+}
+
+.product {
+    margin-bottom: 2rem;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    max-height: 200px;
+}
+
+.product h3 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.product p {
+    color: #555;
+}
+
+.product button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.newsletter {
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 2rem;
+}
+
+.newsletter h2 {
+    font-size: 1.5rem;
+}
+
+.newsletter input,
+.newsletter button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+.newsletter input {
+    width: 100%;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+.newsletter input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    max-width: 300px; 
+}
+.contact {
+    padding: 2rem;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 1.5rem;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact form label {
+    font-weight: bold;
+}
+
+.contact form input[type="text"],
+.contact form input[type="email"],
+.contact form textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.contact form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.contact form input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.contact-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.contact-nav li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+.contact-nav a {
+    color: #fff;
+    text-decoration: none;
+}
+.brand-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.brand {
+    max-width: 300px;
+    margin: 1rem;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.brand img {
+    max-width: 100%;
+    height: auto;
+}
+.register-button {
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    margin-right: 1rem;
+}
+
+.registration-popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+
+.popup-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 25px;
+    border: 1px solid #888;
+    width: 10%;
+    border-radius: 10px;
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.popup-content h2 {
+    text-align: center;
+}
+
+.popup-content label,
+.popup-content input,
+.popup-content button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.popup-content input,
+.popup-content button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.popup-content button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.popup-content button:hover {
+    background-color: #555;
+}
+.cart-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+
+.cart-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 25px;
+    border: 1px solid #888;
+    width: 50%;
+    border-radius: 10px;
+}
+
+.close-cart {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-cart:hover {
+    color: black;
+    text-decoration: none;
+}
+.cart-items {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart-items th, .cart-items td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+.sneaker-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.sneaker {
+    text-align: center;
+    margin: 10px;
+    max-width: 200px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.sneaker img {
+    max-width: 100%;
+}
+
+.sneaker h3, .sneaker p {
+    margin: 5px 0;
+}
+.cart-icon img {
+    width: 30px; 
+    height: auto;
+}
+
+.cart-counter {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+}
